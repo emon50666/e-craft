@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media only screen and (max-width: 486px){
+    .buton{
+        margin-left: 78px;
+    }
+}
