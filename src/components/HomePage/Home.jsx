@@ -1,14 +1,21 @@
 
+import { useLoaderData } from 'react-router-dom';
 import art_1 from '../../assets/art-1.png'
 import art_2 from '../../assets/art-2.png'
 import art_3 from '../../assets/art-3.png'
+import CarftDetails from '../CarftDetails/CarftDetails';
 
 
 
 const Home = () => {
+
+  const carfts = useLoaderData()
+
+
     return (
        
-        <div className="carousel w-full ">
+      <div>
+          <div className="carousel w-full ">
         <div id="slide1" className="carousel-item relative w-full">
           
           <img src={art_1} className="w-full md:h-[450px] "  />
@@ -35,8 +42,21 @@ const Home = () => {
             <a href="#slide1" className="btn btn-circle">❯</a>
           </div>
         </div> 
+
+        {/* carft item section  */}
+
+               
        
-                  </div>
+         </div>
+         <div className='mt-10 mb-10'>
+         <h1 className='text-center font-bold text-3xl font-serif'>Craft Items Section</h1>
+         </div>
+         <div className='grid md:grid-cols-3 gap-5 container mx-auto mb-10'>
+          {
+            carfts.map(carft => <CarftDetails key={carft._id} carft={carft}></CarftDetails>)
+          }
+         </div>
+      </div>
     );
 };
 

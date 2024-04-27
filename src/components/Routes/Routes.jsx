@@ -11,6 +11,7 @@ import AddCraft from "../AddCraft/AddCraft";
 import ArtList from "../MyArtList/ArtList";
 import Error from "../../404/Error";
 import PrivateRoute from "../../PrivateRoute/PrivateRoute";
+import ViewCarftDetails from "../ViewCarftDetails/ViewCarftDetails";
 
 
 
@@ -22,7 +23,8 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
       children: [
         {
           path: '/',
-          element: <Home></Home>
+          element: <Home></Home>,
+          loader: ()=> fetch('http://localhost:5000/carft')
         },
         {
           path: '/register',
@@ -43,6 +45,11 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
         {
           path: '/artlist',
           element: <PrivateRoute><ArtList></ArtList></PrivateRoute>
+        },
+        {
+          path: '/carftdetails/:id',
+          element: <ViewCarftDetails></ViewCarftDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id}`)
         }
       ]
     },

@@ -1,4 +1,4 @@
-
+import toast, { Toaster } from 'react-hot-toast';
 
 const AddCraft = () => {
     const handelAddCraft = event => {
@@ -30,7 +30,11 @@ const AddCraft = () => {
         })
         .then(res => res.json())
         .then(data => {
+            
             console.log(data)
+            if(data.insertedId){
+                toast.success('Craft Successfully')
+            }
         })
     };
 
@@ -46,18 +50,24 @@ const AddCraft = () => {
                     </div>
                     <div>
                         <select name="subcategory" className="select select-warning w-full mb-2 max-w-xs">
-                            <option disabled selected value="">Pick a pizza</option>
-                            <option>Cheese</option>
+                            <option disabled selected value="">Subcategory Name</option>
+                            <option>Landscape Painting</option>
+                            <option>Portrait Drawing</option>
+                            <option>Watercolour Painting</option>
+                            <option>Oil Painting</option>
+                            <option> Charcoal Sketching</option>
+                            <option>Cartoon Drawing</option>
+
                         </select>
                     </div>
                     <div>
                         <input type="text" name="description" placeholder="Short Description" className="input mb-2  input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <div>
-                        <input type="number" name="price" placeholder="Price" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
+                        <input type="tex" name="price" placeholder="Price" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <div>
-                        <input type="number" name="rating" placeholder="Rating" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
+                        <input type="text" name="rating" placeholder="Rating" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <div>
                         <select name="customization" className="select mb-2 select-warning w-full max-w-xs">
@@ -85,6 +95,7 @@ const AddCraft = () => {
                     <button type="submit" className="btn btn-warning w-1/3">Add</button>
                 </div>
             </form>
+            <Toaster></Toaster>
         </div>
     );
 };
