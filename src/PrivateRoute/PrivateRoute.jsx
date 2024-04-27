@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 
 const PrivateRoute = ({children}) => {
@@ -20,7 +20,7 @@ const PrivateRoute = ({children}) => {
    if (user) {
     return children;
 }
-   return <Navigate to={'/login'} />;
+//    return <Navigate to={'/login'} />;
    
 };
 

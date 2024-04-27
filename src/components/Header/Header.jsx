@@ -89,7 +89,7 @@ const Header = () => {
       
   </div> :
 
-<Link to={'/login'}> <button className="bg-[#FFE100]  buton md:mr-4 text-black rounded-lg pt-2 pb-2 pr-4 pl-4 font-bold ">Login</button> </Link>
+''
    }
 </div>
     </div>
