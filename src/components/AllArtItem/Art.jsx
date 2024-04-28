@@ -3,7 +3,7 @@
 const Art = () => {
     return (
         <div>
-            <h2>art page</h2>
+            <h2 className="text-center"> all art page</h2>
         </div>
     );
 };

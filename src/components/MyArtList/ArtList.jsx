@@ -3,7 +3,7 @@
 const ArtList = () => {
     return (
         <div>
-            <h2>art list page</h2>
+            <h2 className="text-center">  art list page</h2>
         </div>
     );
 };
