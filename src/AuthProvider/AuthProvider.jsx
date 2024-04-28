@@ -31,7 +31,7 @@ const registerUser = (email,password) =>{
 // login user
 const loginUser = (email,password) =>{
    
-    setLoading(true)
+    
     return signInWithEmailAndPassword(auth,email,password)
 }
 
@@ -54,7 +54,7 @@ const githubLogin = () =>{
 
 // log out user
 const logOutUser = () =>{
-    setLoading(true)
+  
    
     return signOut(auth)
 }

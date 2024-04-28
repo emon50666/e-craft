@@ -2,8 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
-
+import { Tooltip } from 'react-tooltip'
 const Header = () => {
+
+
 
 
   const [theme,setTheme] = useState('light')
@@ -27,8 +29,8 @@ const Header = () => {
 
 
     return (
-        <div className="md:px-5 bg-[#010632] ">
-        <div className="navbar">
+        <div className="md:px-5 bg-[#010632] z-50 ">
+        <div className="navbar  z-50">
 <div className="navbar-start">
 <div className="dropdown">
   <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
@@ -38,7 +40,7 @@ const Header = () => {
 
   <NavLink to={'/'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>Home</li> </NavLink>
 
-<NavLink to={'/art'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
+<NavLink to={'/art'}   data-tooltip-id="my-tooltip" data-tooltip-content="Hello world!" data-tooltip-place="top" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
 
 <NavLink to={'/addcraft'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>Add Craft Item</li> </NavLink>
 <NavLink to={'/artlist'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>My Art & Craft List</li> </NavLink>
@@ -59,15 +61,15 @@ const Header = () => {
 <div className="navbar-center hidden lg:flex">
 <ul className="menu menu-horizontal px-1 gap-7 mr-10">
 
-<NavLink to={'/'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>Home</li> </NavLink>
+<NavLink to={'/'}  data-tooltip-id="my-tooltip"  data-tooltip-content="Home"   data-tooltip-place="top" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black  my-anchor-element ' : 'text-gray-300'   }   > <li>Home</li> </NavLink>
 
-<NavLink to={'/art'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
+<NavLink to={'/art'}   data-tooltip-id="my-tooltip" data-tooltip-content="All Art & craft Items"   data-tooltip-place="top" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element  ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
 
-<NavLink to={'/addcraft'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>Add Craft Item</li> </NavLink>
-<NavLink to={'/artlist'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' : 'text-gray-300'   }   > <li>My Art & Craft List</li> </NavLink>
+<NavLink to={'/addcraft'} data-tooltip-id="my-tooltip" data-tooltip-content="Add Craft Item"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>Add Craft Item</li> </NavLink>
+<NavLink to={'/artlist'} data-tooltip-id="my-tooltip" data-tooltip-content="My Art & Craft List"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>My Art & Craft List</li> </NavLink>
 
-<NavLink to={'/login'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black  ' : 'text-gray-300'}  > <li>SignIn</li> </NavLink>
-<NavLink to={'/register'}  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black ' :  'text-gray-300' }  > <li>SignUp</li> </NavLink>
+<NavLink to={'/login'} data-tooltip-id="my-tooltip" data-tooltip-content="SignIn"   data-tooltip-place="top"  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'}  > <li>SignIn</li> </NavLink>
+<NavLink to={'/register'} data-tooltip-id="my-tooltip" data-tooltip-content="SignUp"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' :  'text-gray-300' }  > <li>SignUp</li> </NavLink>
   
 
    
@@ -113,7 +115,7 @@ const Header = () => {
 ''
    }
 </div>
-
+<Tooltip id="my-tooltip" />
     </div>
     );
 };

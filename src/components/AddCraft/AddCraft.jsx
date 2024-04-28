@@ -1,6 +1,12 @@
+import { useContext } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const AddCraft = () => {
+
+    const {user} = useContext(AuthContext)
+
+
     const handelAddCraft = event => {
         event.preventDefault();
         const form = event.target;
@@ -88,10 +94,10 @@ const AddCraft = () => {
                         <input type="text" name="processing" placeholder="Processing Time" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <div>
-                        <input type="text" name="email" placeholder="User Email" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
+                        <input type="text" disabled  defaultValue={user.email} name="email" placeholder="User Email" className="input mb-2 input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <div>
-                        <input type="text" name="username" placeholder="User Name" className="input mb-2  input-bordered input-warning w-full max-w-xs" />
+                        <input type="text" disabled defaultValue={user.displayName} name="username" placeholder="User Name" className="input mb-2  input-bordered input-warning w-full max-w-xs" />
                     </div>
                     <button type="submit" className="btn btn-warning w-1/3">Add</button>
                 </div>
