@@ -1,9 +1,26 @@
+import { useContext, useState } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { useFetcher } from "react-router-dom";
+
+import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
 
 
 const ArtList = () => {
+    const {user} = useContext(AuthContext)
+    const [list,setList] = useState([])
+    useFetcher(()=>{
+        fetch(`http://localhost:5000/craftlist/${user.email}`)
+        .then(res=>res.json())
+        .then(data =>{
+            console.log(data)
+            setList(data)
+        })
+    },[user])
     return (
         <div>
-            <h2 className="text-center">  art list page</h2>
+            {
+    list.map(carft => <MyArtListRoute key={carft._id} carft={carft}></MyArtListRoute>)
+     }
         </div>
     );
 };

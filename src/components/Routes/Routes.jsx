@@ -13,6 +13,7 @@ import Error from "../../404/Error";
 import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 import ViewCarftDetails from "../ViewCarftDetails/ViewCarftDetails";
 import UpdateCarft from "../UpdateCarft/UpdateCarft";
+import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
 
 
 
@@ -37,7 +38,8 @@ import UpdateCarft from "../UpdateCarft/UpdateCarft";
         },
         {
           path: '/art',
-          element: <Art></Art>
+          element: <Art></Art>,
+          loader: ()=> fetch('http://localhost:5000/carft')
         },
         {
           path: '/addcraft',
@@ -55,6 +57,10 @@ import UpdateCarft from "../UpdateCarft/UpdateCarft";
         {
           path: '/updatecarft',
           element: <UpdateCarft></UpdateCarft>
+        },
+        {
+          path: '/craftlist',
+          element: <MyArtListRoute></MyArtListRoute>
         }
       ]
     },

@@ -5,6 +5,7 @@ import art_2 from '../../assets/art-2.png'
 import art_3 from '../../assets/art-3.png'
 import CarftDetails from '../CarftDetails/CarftDetails';
 import { Slide } from "react-awesome-reveal";
+import UserAdd from '../AllArtItem/UserAdd';
 
 
 
@@ -49,9 +50,10 @@ const Home = () => {
                
        
          </div>
+        <UserAdd adduser={carfts}></UserAdd>
          <div className='mt-10 mb-10'>
           <Slide delay={300}>
-          <h1 className='text-center font-bold text-3xl font-serif'>Craft Items Section</h1>
+          <h1 className='text-center font-bold text-3xl font-serif'>Art & Craft Categories</h1>
           </Slide>
        
          </div>
