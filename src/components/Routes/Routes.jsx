@@ -47,7 +47,7 @@ import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
         },
         {
           path: '/carftdetails/:id',
-          element: <ViewCarftDetails></ViewCarftDetails>,
+          element: <PrivateRoute><ViewCarftDetails></ViewCarftDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id}`)
         },
         {
