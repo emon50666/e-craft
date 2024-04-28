@@ -56,9 +56,9 @@ const Home = () => {
        
          </div>
          <div className='grid md:grid-cols-3 gap-5 container mx-auto mb-10'>
-          {
-            carfts.map(carft => <CarftDetails key={carft._id} carft={carft}></CarftDetails>)
-          }
+         {
+    carfts.slice(0, 6).map(carft => <CarftDetails key={carft._id} carft={carft}></CarftDetails>)
+}
          </div>
       </div>
     );
