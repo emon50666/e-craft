@@ -7,9 +7,9 @@ import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
 
 const ArtList = () => {
     const {user} = useContext(AuthContext)
-    const [list,setList] = useState([])
+    const [lists,setList] = useState([])
     useFetcher(()=>{
-        fetch(`http://localhost:5000/craftlist/${user.email}`)
+        fetch(`http://localhost:5000/craftlist/${user?.email}`)
         .then(res=>res.json())
         .then(data =>{
             console.log(data)
@@ -19,7 +19,7 @@ const ArtList = () => {
     return (
         <div>
             {
-    list.map(carft => <MyArtListRoute key={carft._id} carft={carft}></MyArtListRoute>)
+    lists.map(carft => <MyArtListRoute key={carft._id} carft={carft}></MyArtListRoute>)
      }
         </div>
     );

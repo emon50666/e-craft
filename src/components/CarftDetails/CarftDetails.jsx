@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types'; // Import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'; 
 import { GoDotFill } from "react-icons/go";
 
 const CarftDetails = ({ carft }) => {

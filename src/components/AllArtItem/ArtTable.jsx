@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types'; 
 
 const ArtTable = ({carft}) => {
     const {_id,  item, image,price,rating,stockStatus,username ,subcategory} = carft;
@@ -67,5 +67,25 @@ const ArtTable = ({carft}) => {
         </div>
     );
 };
+
+
+
+ArtTable.propTypes = {
+    carft: PropTypes.shape({
+        _id: PropTypes.string.isRequired,
+        item: PropTypes.string.isRequired,
+        username: PropTypes.string.isRequired,
+        price: PropTypes.string.isRequired,
+        rating: PropTypes.string.isRequired,
+        stockStatus: PropTypes.string.isRequired,
+        subcategory: PropTypes.string.isRequired,
+
+
+
+       
+        image: PropTypes.string.isRequired
+    }).isRequired
+};
+
 
 export default ArtTable;
