@@ -69,7 +69,7 @@ const Home = () => {
 
 
 
-         <section className="py-20 dark:bg-gray-100 dark:text-gray-800">
+         <section className="py-20 dark:bg-gray-100 dark:text-gray-800"> 
 	<div className="container px-4 mx-auto">
 		<div className="max-w-2xl mx-auto mb-16 text-center">
 			<span className="font-bold tracking-wider uppercase dark:text-violet-600">Pricing</span>
@@ -176,7 +176,48 @@ const Home = () => {
 			</div>
 		</div>
 	</div>
-</section>
+      </section>
+
+
+
+
+
+      {/* blog section */}
+
+      <div className="bg-[#F7FAE7]  md:px-10 px-4 py-12 ">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">Our Latest Blogs</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="shadow-lg shadow-yellow-200/50 rounded-lg overflow-hidden hover:scale-110 transition-all duration-500 cursor-pointer ">
+            <img src="https://i.ibb.co/z4t8Mw4/home-5.jpg" alt="Blog Post 1" className="w-full h-52 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-2">The Real Estate Market</h3>
+              <p className="text-gray-600 text-sm">
+              Nullam tempus sollicitudin cursus. Nulla elit mauris, volutpat eu varius malesuada, pulvinar eu ligula. Ut et adipiscing erat. 
+              </p>
+            
+              <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
+            </div>
+          </div>
+          <div className="shadow-lg shadow-yellow-200/50 rounded-lg hover:scale-110 transition-all duration-500 cursor-pointer  overflow-hidden ">
+            <img src="https://readymadeui.com/hotel-img.webp" alt="Blog Post 2" className="w-full h-52 object-cover" />
+            <div className="p-6 ">
+              <h3 className="text-xl font-bold text-gray-800 mb-2">About Real Estate Industry</h3>
+              <p className="text-gray-600 text-sm">Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi elementum pretium. Donec et justo ante. </p>
+              <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
+            </div>
+          </div>
+          <div className=" shadow-yellow-200/50 rounded-lg  hover:scale-110 transition-all duration-500 cursor-pointer  overflow-hidden shadow-lg">
+            <img src="https://readymadeui.com/team-image.webp" alt="Blog Post 3" className="w-full h-52 object-cover" />
+            <div className="p-6">
+              <h3 className ="text-xl font-bold text-gray-800 mb-2">Why We Love Real Estate</h3>
+              <p className="text-gray-600 text-sm">urabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin etc.</p>
+              <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
     );
 };
