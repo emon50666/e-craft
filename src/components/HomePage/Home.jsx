@@ -4,6 +4,7 @@ import art_1 from '../../assets/art-1.png'
 import art_2 from '../../assets/art-2.png'
 import art_3 from '../../assets/art-3.png'
 import CarftDetails from '../CarftDetails/CarftDetails';
+import { Slide } from "react-awesome-reveal";
 
 
 
@@ -49,7 +50,10 @@ const Home = () => {
        
          </div>
          <div className='mt-10 mb-10'>
-         <h1 className='text-center font-bold text-3xl font-serif'>Craft Items Section</h1>
+          <Slide delay={300}>
+          <h1 className='text-center font-bold text-3xl font-serif'>Craft Items Section</h1>
+          </Slide>
+       
          </div>
          <div className='grid md:grid-cols-3 gap-5 container mx-auto mb-10'>
           {
