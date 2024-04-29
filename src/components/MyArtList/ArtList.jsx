@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { useFetcher } from "react-router-dom";
+
 
 import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
 
@@ -8,18 +8,19 @@ import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
 const ArtList = () => {
     const {user} = useContext(AuthContext)
     const [lists,setList] = useState([])
-    useFetcher(()=>{
+
+    useEffect(()=>{
         fetch(`http://localhost:5000/craftlist/${user?.email}`)
         .then(res=>res.json())
         .then(data =>{
             console.log(data)
-            setList(data)
+            setList(data) 
         })
     },[user])
     return (
-        <div>
+        <div className="grid md:grid-cols-3  container mx-auto">
             {
-    lists.map(carft => <MyArtListRoute key={carft._id} carft={carft}></MyArtListRoute>)
+    lists.map(carft => <MyArtListRoute key={carft._id} carftitem={carft}></MyArtListRoute>)
      }
         </div>
     );

@@ -189,29 +189,29 @@ const Home = () => {
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">Our Latest Blogs</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="shadow-lg shadow-yellow-200/50 rounded-lg overflow-hidden hover:scale-110 transition-all duration-500 cursor-pointer ">
-            <img src="https://i.ibb.co/z4t8Mw4/home-5.jpg" alt="Blog Post 1" className="w-full h-52 object-cover" />
+            <img src="https://i.ibb.co/4sw7Dhs/hqdefault.jpg" alt="Blog Post 1" className="w-full h-52 object-cover" />
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">The Real Estate Market</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Exploring the Art of Sketching</h3>
               <p className="text-gray-600 text-sm">
-              Nullam tempus sollicitudin cursus. Nulla elit mauris, volutpat eu varius malesuada, pulvinar eu ligula. Ut et adipiscing erat. 
+              Embark on a journey of creativity as we delve into the art of sketching and uncover the secrets behind this timeless form of expression. 
               </p>
             
               <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
             </div>
           </div>
           <div className="shadow-lg shadow-yellow-200/50 rounded-lg hover:scale-110 transition-all duration-500 cursor-pointer  overflow-hidden ">
-            <img src="https://readymadeui.com/hotel-img.webp" alt="Blog Post 2" className="w-full h-52 object-cover" />
+            <img src="https://i.ibb.co/5RF56yV/images-2.jpg" alt="Blog Post 2" className="w-full h-52 object-cover" />
             <div className="p-6 ">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">About Real Estate Industry</h3>
-              <p className="text-gray-600 text-sm">Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi elementum pretium. Donec et justo ante. </p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">The Evolution of Drawing in the Digital Age</h3>
+              <p className="text-gray-600 text-sm">Witness the evolution of drawing as we explore the transition from traditional paper-based techniques to digital artistry in the modern age </p>
               <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
             </div>
           </div>
           <div className=" shadow-yellow-200/50 rounded-lg  hover:scale-110 transition-all duration-500 cursor-pointer  overflow-hidden shadow-lg">
-            <img src="https://readymadeui.com/team-image.webp" alt="Blog Post 3" className="w-full h-52 object-cover" />
+            <img src="https://i.ibb.co/5RF56yV/images-2.jpg" alt="Blog Post 3" className="w-full h-52 object-cover" />
             <div className="p-6">
-              <h3 className ="text-xl font-bold text-gray-800 mb-2">Why We Love Real Estate</h3>
-              <p className="text-gray-600 text-sm">urabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin etc.</p>
+              <h3 className ="text-xl font-bold text-gray-800 mb-2">Essential Drawing Techniques Every Artist Should Master</h3>
+              <p className="text-gray-600 text-sm">Dive into the world of drawing as we explore ten fundamental techniques that are essential for artists of all skill levels. .</p>
               <a href="javascript:void(0);" className="mt-4 inline-block text-orange-600 text-sm hover:underline">Read More</a>
             </div>
           </div>
