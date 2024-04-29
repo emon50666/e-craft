@@ -8,7 +8,7 @@ const Header = () => {
 
 
 
-  const [theme,setTheme] = useState('light')
+  const [theme,setTheme] = useState("light")
   const handelTheme = (e) =>{
       if(e.target.checked){
           setTheme('dark')
@@ -17,11 +17,15 @@ const Header = () => {
       }
   }
 
+
   useEffect(()=> {
     localStorage.setItem('theme',theme)
     const localTheme = localStorage.getItem('theme')
     document.querySelector('html').setAttribute('data-theme',localTheme)
  },[theme])
+
+
+
 
   const {user,logOutUser} = useContext(AuthContext)
 

@@ -6,18 +6,20 @@ import art_3 from '../../assets/art-3.png'
 import CarftDetails from '../CarftDetails/CarftDetails';
 import { Slide } from "react-awesome-reveal";
 import UserAdd from '../AllArtItem/UserAdd';
+import { useState } from 'react';
 
 
 
 const Home = () => {
 
-  const carfts = useLoaderData()
+  const carftsItem = useLoaderData()
+  const [carfts,setCarfts] = useState(carftsItem)
 
 
     return (
        
       <div>
-          <div className="carousel w-full  ">
+          <div className="carousel *:-z-10 w-full  ">
         <div id="slide1" className="carousel-item relative w-full">
           
           <img src={art_1} className="w-full md:h-[450px] "  />
@@ -59,7 +61,9 @@ const Home = () => {
          </div>
          <div className='grid md:grid-cols-3 gap-5 container mx-auto '>
          {
-    carfts.slice(0, 6).map(carft => <CarftDetails key={carft._id} carft={carft}></CarftDetails>)
+    carfts.slice(0, 6).map(carft => <CarftDetails key={carft._id} carft={carft} carfts={carfts} setCarfts={setCarfts} >
+
+	</CarftDetails>)
 }
          </div>
 

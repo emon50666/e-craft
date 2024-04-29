@@ -55,8 +55,10 @@ import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
           element: <PrivateRoute><ArtList></ArtList></PrivateRoute>
         },
         {
-          path: '/updatecarft',
-          element: <UpdateCarft></UpdateCarft>
+          path: '/updatecarft/:id',
+          element: <UpdateCarft></UpdateCarft>,
+          loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id} `)
+          
         },
         {
           path: '/craftlist',

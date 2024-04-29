@@ -18,9 +18,9 @@ const ArtList = () => {
         })
     },[user])
     return (
-        <div className="grid md:grid-cols-3  container mx-auto">
+        <div className="grid md:grid-cols-3 gap-5  container mx-auto">
             {
-    lists.map(carft => <MyArtListRoute key={carft._id} carftitem={carft}></MyArtListRoute>)
+    lists.map(carft => <MyArtListRoute key={carft._id} carftitem={carft} lists={lists} setList={setList} ></MyArtListRoute>)
      }
         </div>
     );
