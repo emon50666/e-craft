@@ -102,7 +102,9 @@ MyArtListRoute.propTypes = {
         lists: PropTypes.string.isRequired,
         setList: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired
-    }).isRequired
+    }).isRequired,
+    lists: PropTypes.array.isRequired,
+    setList: PropTypes.func.isRequired
 };
 
 

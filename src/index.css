@@ -14,4 +14,6 @@
 
 body,html{
     font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    overflow-x: hidden;
 }

@@ -95,7 +95,7 @@ const Header = () => {
       <div className="w-10 rounded-full border ">
        {
         user && user.photoURL ? (
-          <img src={user.photoURL}  />
+          <img referrerPolicy="no-referrer" src={user.photoURL}  />
         ) : (
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfhfRCjTlu-H5p0BfBD_GI6QopG5FIKVPYg&s" alt="Default Profile" />
         )

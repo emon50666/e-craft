@@ -6,7 +6,6 @@ import auth from './../components/firebase/Firebase.config';
 
 
 
-
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
@@ -19,7 +18,7 @@ const [user,setUser] = useState(null)
 const [error,setError] = useState('')
 const [loading,setLoading] = useState(true)
 
-
+console.log(user)
 
 
 
@@ -41,7 +40,6 @@ const loginUser = (email,password) =>{
 
 const googleLogin = () =>{
     return signInWithPopup(auth,googleProvider)
-  
 }
 
    

@@ -75,7 +75,7 @@ const handelLogin = e =>{
   <div className="mt-6 mb-4 text-center text-[35px] flex justify-center gap-16 ">
         
         <button onClick={()=> googleLogin()}> <FcGoogle></FcGoogle> </button>
-        <button onClick={()=> githubLogin()}> <GrGithub></GrGithub> </button>
+        <button onClick={()=> githubLogin()  }> <GrGithub></GrGithub> </button>
 
       </div>
 <p className="text-sm flex text-center mx-auto gap-2"> Dont Have A Account ? <Link to={'/register'}> <p className="font-serif text-sm  underline underline-offset-2 text-[#5c2eff] ">Register</p></Link> </p>
