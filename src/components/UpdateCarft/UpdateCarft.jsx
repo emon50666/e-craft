@@ -30,7 +30,7 @@ const UpdateCarft = () => {
 
     // send data to the server on backend
 
-    fetch(`http://localhost:5000/carft/${_id} `,{
+    fetch(`https://exame-10-server.vercel.app/carft/${_id} `,{
         method: 'PUT',
         headers:{
             "content-type": 'application/json'

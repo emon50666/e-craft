@@ -10,7 +10,7 @@ const ArtList = () => {
     const [lists,setList] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/craftlist/${user?.email}`)
+        fetch(`https://exame-10-server.vercel.app/craftlist/${user?.email}`)
         .then(res=>res.json())
         .then(data =>{
             console.log(data)

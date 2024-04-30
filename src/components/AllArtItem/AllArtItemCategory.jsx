@@ -12,7 +12,7 @@ const AllArtItemCategory = () => {
 const {category} = useParams()
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/craftlist/${category} `)
+        fetch(`https://exame-10-server.vercel.app/craftlist/${category} `)
         .then(res=>res.json())
         .then(data =>{
             console.log(data)

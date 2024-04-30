@@ -65,15 +65,15 @@ const Header = () => {
 <div className="navbar-center hidden lg:flex">
 <ul className="menu menu-horizontal px-1 gap-7 mr-10">
 
-<NavLink to={'/'}  data-tooltip-id="my-tooltip"  data-tooltip-content="Home"   data-tooltip-place="top" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black  my-anchor-element ' : 'text-gray-300'   }   > <li>Home</li> </NavLink>
+<NavLink to={'/'}  data-tooltip-id="my-tooltip"  data-tooltip-content="Home"   data-tooltip-place="start" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black  my-anchor-element ' : 'text-gray-300'   }   > <li>Home</li> </NavLink>
 
-<NavLink to={'/art'}   data-tooltip-id="my-tooltip" data-tooltip-content="All Art & craft Items"   data-tooltip-place="top" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element  ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
+<NavLink to={'/art'}   data-tooltip-id="my-tooltip" data-tooltip-content="All Art & craft Items"   data-tooltip-place="start" className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element  ' : 'text-gray-300'   }   > <li>All Art & craft Items</li> </NavLink>
 
-<NavLink to={'/addcraft'} data-tooltip-id="my-tooltip" data-tooltip-content="Add Craft Item"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>Add Craft Item</li> </NavLink>
-<NavLink to={'/artlist'} data-tooltip-id="my-tooltip" data-tooltip-content="My Art & Craft List"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>My Art & Craft List</li> </NavLink>
+<NavLink to={'/addcraft'} data-tooltip-id="my-tooltip" data-tooltip-content="Add Craft Item"   data-tooltip-place="start"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>Add Craft Item</li> </NavLink>
+<NavLink to={'/artlist'} data-tooltip-id="my-tooltip" data-tooltip-content="My Art & Craft List"   data-tooltip-place="start"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'   }   > <li>My Art & Craft List</li> </NavLink>
 
-<NavLink to={'/login'} data-tooltip-id="my-tooltip" data-tooltip-content="SignIn"   data-tooltip-place="top"  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'}  > <li>SignIn</li> </NavLink>
-<NavLink to={'/register'} data-tooltip-id="my-tooltip" data-tooltip-content="SignUp"   data-tooltip-place="top"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' :  'text-gray-300' }  > <li>SignUp</li> </NavLink>
+<NavLink to={'/login'} data-tooltip-id="my-tooltip" data-tooltip-content="SignIn"   data-tooltip-place="start"  className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' : 'text-gray-300'}  > <li>SignIn</li> </NavLink>
+<NavLink to={'/register'} data-tooltip-id="my-tooltip" data-tooltip-content="SignUp"   data-tooltip-place="start"   className=  {({isActive}) => isActive ? 'text-[#FFE100] font-black my-anchor-element ' :  'text-gray-300' }  > <li>SignUp</li> </NavLink>
   
 
    

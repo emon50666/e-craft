@@ -33,7 +33,7 @@ const {carftitem,lists,setList} = props;
 
             console.log('delete confram')
 
-            fetch(`http://localhost:5000/carft/${_id} `,{
+            fetch(`https://exame-10-server.vercel.app/carft/${_id} `,{
                 method: "DELETE",
 
             })

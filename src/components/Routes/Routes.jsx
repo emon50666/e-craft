@@ -27,7 +27,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         {
           path: '/',
           element: <Home></Home>,
-          loader: ()=> fetch('http://localhost:5000/carft')
+          loader: ()=> fetch('https://exame-10-server.vercel.app/carft')
         },
         {
           path: '/register',
@@ -40,7 +40,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         {
           path: '/art',
           element: <Art></Art>,
-          loader: ()=> fetch('http://localhost:5000/carft')
+          loader: ()=> fetch('https://exame-10-server.vercel.app/carft')
         },
         {
           path: '/addcraft',
@@ -49,7 +49,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         {
           path: '/carftdetails/:id',
           element: <PrivateRoute><ViewCarftDetails></ViewCarftDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id}`)
+          loader: ({params}) => fetch(`https://exame-10-server.vercel.app/carft/${params.id}`)
         },
         {
           path: '/artlist',
@@ -58,7 +58,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         {
           path: '/updatecarft/:id',
           element: <PrivateRoute><UpdateCarft></UpdateCarft></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id} `)
+          loader: ({params}) => fetch(`https://exame-10-server.vercel.app/carft/${params.id} `)
           
         },
         {
@@ -69,7 +69,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         {
           path: '/allcategory',
          element: <AllArtItemCategory></AllArtItemCategory>,
-         loader: () => fetch('http://localhost:5000/craftlist/ ')
+         loader: () => fetch('https://exame-10-server.vercel.app/craftlist/ ')
         }
       ]
     },

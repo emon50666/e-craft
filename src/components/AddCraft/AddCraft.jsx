@@ -27,7 +27,7 @@ const AddCraft = () => {
 
         // send data to the server on backend
 
-        fetch('http://localhost:5000/carft',{
+        fetch('https://exame-10-server.vercel.app/carft',{
             method: 'POST',
             headers:{
                 "content-type": 'application/json'

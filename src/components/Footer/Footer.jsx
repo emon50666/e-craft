@@ -35,9 +35,9 @@ const Footer = () => {
   <nav>
     <h6 className="footer-title">Follow Us</h6> 
     <div className="grid grid-flow-col gap-4 mt-2">
-    <Link> <FaFacebook className="text-2xl"></FaFacebook> </Link>
-    <Link> <FaGithub  className="text-2xl" ></FaGithub> </Link>
-    <Link> <IoLogoLinkedin  className="text-2xl"></IoLogoLinkedin> </Link>
+    <Link to={'https://www.facebook.com/profile.php?id=100080623072389'}> <FaFacebook className="text-2xl"></FaFacebook> </Link>
+    <Link to={'https://github.com/emon50666'}> <FaGithub  className="text-2xl" ></FaGithub> </Link>
+    <Link to={'https://linkedin.com'}> <IoLogoLinkedin  className="text-2xl"></IoLogoLinkedin> </Link>
 
     </div>
   </nav> 
