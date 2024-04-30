@@ -57,7 +57,7 @@ import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
         },
         {
           path: '/updatecarft/:id',
-          element: <UpdateCarft></UpdateCarft>,
+          element: <PrivateRoute><UpdateCarft></UpdateCarft></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/carft/${params.id} `)
           
         },

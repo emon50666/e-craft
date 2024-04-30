@@ -52,11 +52,12 @@ const Home = () => {
 
                
        
-         </div>
+         </div> 
         <UserAdd adduser={carfts}></UserAdd>
+		
          <div className='mt-10 mb-10'>
           <Slide delay={300}>
-          <h1 className='text-center font-bold text-3xl font-serif'>Art & Craft Categories</h1>
+          {/* <h1 className='text-center font-bold text-3xl font-serif'>Art & Craft Categories</h1> */}
           </Slide>
        
          </div>
