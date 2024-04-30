@@ -3,10 +3,11 @@ import { useLoaderData } from 'react-router-dom';
 import art_1 from '../../assets/art-1.png'
 import art_2 from '../../assets/art-2.png'
 import art_3 from '../../assets/art-3.png'
-import CarftDetails from '../CarftDetails/CarftDetails';
+// import CarftDetails from '../CarftDetails/CarftDetails';
 import { Slide } from "react-awesome-reveal";
 import UserAdd from '../AllArtItem/UserAdd';
 import { useState } from 'react';
+import AllArtItemCategory from '../AllArtItem/AllArtItemCategory';
 
 
 
@@ -61,9 +62,9 @@ const Home = () => {
          </div>
          <div className='grid md:grid-cols-3 gap-5 container mx-auto '>
          {
-    carfts.slice(0, 6).map(carft => <CarftDetails key={carft._id} carft={carft} carfts={carfts} setCarfts={setCarfts} >
+    carfts.slice(0, 6).map(carft => <AllArtItemCategory key={carft._id} carft={carft} carfts={carfts} setCarfts={setCarfts} >
 
-	</CarftDetails>)
+	</AllArtItemCategory>)
 }
          </div>
 

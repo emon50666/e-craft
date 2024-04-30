@@ -49,7 +49,7 @@ const UpdateCarft = () => {
 
     return (
         <div>
-            <h1 className="text-center font-semibold mt-10 text-3xl">Update Craft item:{updatecraftItem.item}  </h1>
+            <h1 className="text-center font-semibold mt-10 text-2xl">Update : <span className="text-2xl text-yellow-600">{updatecraftItem.item} </span> </h1>
             <div className="mt-10 mb-10 container mx-auto ">
             <form onSubmit={handelUpdateCraft}>
                 <div className="justify-center text-center">

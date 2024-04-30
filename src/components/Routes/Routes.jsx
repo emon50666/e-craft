@@ -14,6 +14,7 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 import ViewCarftDetails from "../ViewCarftDetails/ViewCarftDetails";
 import UpdateCarft from "../UpdateCarft/UpdateCarft";
 import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
+import AllArtItemCategory from "../AllArtItem/AllArtItemCategory";
 
 
 
@@ -63,6 +64,12 @@ import MyArtListRoute from "../MYArtListRoute/MyArtListRoute";
         {
           path: '/craftlist',
           element: <MyArtListRoute></MyArtListRoute>
+        },
+
+        {
+          path: '/allcategory',
+         element: <AllArtItemCategory></AllArtItemCategory>,
+         loader: () => fetch('http://localhost:5000/craftlist/ ')
         }
       ]
     },
