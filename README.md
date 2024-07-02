@@ -8,6 +8,11 @@ eCraft is a modern, full-stack application designed for craft enthusiasts. It le
 - react Tooltip 
 - React Awesome Reveal
 
+  - Features
+  - add craft item
+  - delete craft item
+  - top craft item show list
+
 - Technologies
 Front-end: HTML, Tailwind CSS, React
 Back-end: Node.js, Express.js
