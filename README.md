@@ -1,4 +1,4 @@
-[Live Site Link] = (https://dainty-lokum-d4ce28.netlify.app/)
+[Live Site Link] = (https://elaborate-marigold-729a4e.netlify.app/)
 
 eCraft is a modern, full-stack application designed for craft enthusiasts. It leverages HTML, Tailwind CSS, React, MongoDB, Node.js, Express.js, and Firebase to provide an engaging and dynamic user experience.
 
